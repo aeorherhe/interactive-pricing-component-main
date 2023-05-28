@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Interactive pricing component</title>
+  </head>
+  <body>
+    <main>
+      <div class="main">
+        <section class="header">
+          <img src="./images/pattern-circles.svg" alt="" class="logo" />
+          <h1>Simple, traffic-based pricing</h1>
+          <p>Sign-up for our 30-day trial. No credit card required.</p>
+        </section>
+        <section class="pricing">
+          <article>
+            <div class="pageview">
+              <p><span class="pageviews">100k</span> Pageviews</p>
+              <div class="cost desktop-view">
+                <p class="price">$<span id="price2">16</span>.00</p>
+                <p class="duration">/ month</p>
+              </div>
+            </div>
+            <!-- range slider -->
+            <form class="form">
+              <input
+                type="range"
+                name="range-slider"
+                id="range-slider"
+                min="0"
+                max="4"
+                value="2"
+              />
+            </form>
+            <!-- end of range slider -->
+            <div class="cost mobile-view">
+              <p class="price">$<span id="price">16</span>.00</p>
+              <p class="duration">/ month</p>
+            </div>
+            <!-- checkbox -->
+            <div class="toggle">
+              <p class="name">Monthly Billing</p>
+              <input type="checkbox" class="checkbox" id="checkbox" />
+              <label for="checkbox" class="label">
+                <div class="ball"></div>
+              </label>
+              <div class="name">
+                <p class="mobile-view">
+                  Yearly Billing
+                  <span class="discount">-25%</span>
+                </p>
+                <p class="desktop-view">
+                  Yearly Billing
+                  <span class="discount">-25% discount</span>
+                </p>
+              </div>
+            </div>
+            <!-- end of checkbox -->
+          </article>
+          <article class="subscribe">
+            <div class="all-benefits">
+              <div class="benefit">
+                <img src="./images/icon-check.svg" alt="" class="check-icon" />
+                <p>Unlimited websites</p>
+              </div>
+              <div class="benefit">
+                <img src="./images/icon-check.svg" alt="" class="check-icon" />
+                <p>100% data ownership</p>
+              </div>
+              <div class="benefit">
+                <img src="./images/icon-check.svg" alt="" class="check-icon" />
+                <p>Email reports</p>
+              </div>
+            </div>
+            <button class="btn">Start my trial</button>
+          </article>
+        </section>
+      </div>
+    </main>
+    <my-profile class="my-profile">
+      Challenge by :
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor....
+      </a>
+      Coded by :
+      <a href="https://aeorherhe.netlify.app" target="_blank"
+        >Abraham Orherhe</a
+      >
+      <div class="my-profile-icons">
+        <a href="https://www.facebook.com/aeorherhe" target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="https://www.instagram.com/aeorherhe/" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://twitter.com/aeorherhe" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+    </my-profile>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
