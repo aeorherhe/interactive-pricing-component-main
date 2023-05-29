@@ -42,6 +42,14 @@ body {
   place-items: center;
 }
 
+body::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: hsla(223, 50%, 87%, 0.2);
+}
+
 .main {
   transition: var(--transition);
   width: 375px;
@@ -299,7 +307,6 @@ input[type="range"]:focus::-ms-fill-upper {
 @media screen and (min-width: 700px) {
   body {
     background-size: 100%;
-    background-repeat: no-repeat;
   }
 
   .main {
