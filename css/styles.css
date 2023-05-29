@@ -43,6 +43,7 @@ body {
 }
 
 .main {
+  transition: var(--transition);
   width: 375px;
 }
 
@@ -291,15 +292,19 @@ input[type="range"]:focus::-ms-fill-upper {
   font-weight: 500;
   outline: none;
   padding: 15px 50px;
+  cursor: pointer;
 }
 
 /* media query */
 @media screen and (min-width: 700px) {
   body {
     background-size: 100%;
+    background-repeat: no-repeat;
   }
+
   .main {
     width: 600px;
+    transition: var(--transition);
   }
 
   .mobile-view {
@@ -311,7 +316,6 @@ input[type="range"]:focus::-ms-fill-upper {
   }
 
   .toggle {
-    border: var(--border);
     display: flex;
     place-items: center;
   }
